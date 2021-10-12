@@ -66,7 +66,7 @@ object EmployeeWithCompany{
 }
 
 object Main extends App {
-  ConnectionPool.singleton("jdbc:mysql:///data?characterEncoding=utf8", "root", "murthy#1")
+  ConnectionPool.singleton("jdbc:mysql:///data?characterEncoding=utf8", "user", "password")
   implicit val session = AutoSession
   
   //table creation for products
